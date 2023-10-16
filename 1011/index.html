@@ -12,7 +12,7 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: flex-end;
-            margin-top:50px;
+            margin-top: 50px;
         }
 
         .d1 {
@@ -24,53 +24,63 @@
         }
 
         #webdiv {
-            background-color: antiquewhite;
+           
             width: 1000px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        #footerdiv
-        {
-            background-color:aliceblue;
-            height:50px;
-
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-            align-items:center;
-
-            border-radius:25px;
-            color:darkgray;
+        #footerdiv {
+           
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            color: darkgray;
         }
 
-        #bodydiv
-        {
-            background-color:darkorange;
-
-            display:flex;
-            flex-direction:row;
-
-
+        #bodydiv {
+           
+            display: flex;
+            flex-direction: row;
         }
 
-        #leftdiv
-        {
-            background-color:blueviolet;
+        #leftdiv {
+            
         }
 
-        #rightdiv
-        {
-            background-color:antiquewhite;
+        #rightdiv {
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: darkgray;
+        }
 
-            display:flex;
-            flex-direction:column;
-            align-items:center;
+        #updiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
 
-            border-radius:10px;
-            border-width:2px;
-            border-style:solid;
-            border-color:darkgray;
+        #downdiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #title1 {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightblue;
+            border-radius: 5px;
         }
     </style>
 
@@ -80,18 +90,54 @@
 <body>
 
     <div id="webdiv">
-        web page 
+        web page
+        <div id="headerdiv" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+
+            <div style="font-size:30pt;color:dodgerblue;text-transform:uppercase;font-weight:bold;">
+                I love Programming!
+            </div>
+
+            <div>
+                <img src="a.svg" style="height:100px"/>
+            </div>
+
+        </div>
 
         <div id="bodydiv">
-            
+
             <div id="leftdiv">
-                left
+                <div id="updiv" style="width:480px;background-color:antiquewhite;">
+                    <span id="title1">
+                        What ive already learned:
+                    </span>
+
+                 <ul>
+                     <li>C#</li>
+                     <li>C# Entity Framework</li>
+                     <li>Database SQlite </li>
+                     <li>HTML & CSS</li>
+                 </ul>
+
+                </div>
+                <div id="downdiv" style="width:480px;background-color:aquamarine;">
+                <span id="title2" style="font-size:20px;font-weight:bold;">
+                    What i am going to learn:
+                </span>
+
+                    <ol>
+                        <li>JavaScript</li>
+                        <li>BootStrap</li>
+                        <li>ASP.NET MVC</li>
+                        <li>Web REST API</li>
+                    </ol>
+                
+                </div>
             </div>
 
             <div id="rightdiv">
                 <div style="color:dodgerblue;font-size:20pt;font-weight:bold;">I love MIS 3033</div>
                 <div>
-                    <img style="width:400px;"src="b.svg"/>
+                    <img style="width:400px;" src="b.svg" />
                 </div>
             </div>
         </div>
