@@ -1,19 +1,168 @@
 <html>
 
 <head>
-    <title>[exam code]Randilyn Gomme Exam 2 MIS3033</title>
+    <title>[NDSL]Randilyn Gomme Exam 2 MIS3033</title>
+
+    <style>
+        #main
+        {
+          
+            width:800px;
+        }
+        #h
+        {
+           
+            display:flex;
+            flex-direction:row;
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgray;
+            border-radius:5px;
+            margin-right:auto;
+        }
+        #b1 {
+           
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
+        #b2 {
+        
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
+        #footer {
+           
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: gray;
+            height: 60px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
+
+        .title
+        {
+            display:flex;
+            flex-direction:row;
+            align-items:start;
+            font-size:20px;
+            border-radius:5px;
+            background-color:lightskyblue;
+            text-transform:uppercase;
+        }
+    
+
+    </style>
+   
 </head>
 
 <body>
 
-    <img src="static/head1.png" style="height:100px;"/>
-    <img src="static/head2.png" style="height:100px;"/>
-    <img src="static/linkedin.png" style="height:100px;"/>
-    <img src="static/html.svg" style="height:100px;"/>
-    <img src="static/css.svg" style="height:100px;"/>
-    <img src="static/javascript.svg" style="height:100px;"/>
-    <img src="static/sqlite.svg" style="height:100px;"/>
-    <img src="static/logo.svg" style="height:100px;"/>
+    <div id="main">
+        <div id="h">
+
+            <div id="left" style="width: 200px; height: 70px; display: flex; flex-direction: row; align-items: center;justify-content:center;">
+                <div>MIS 3033 EXAM 2 
+                <br />
+                Randilyn Gomme</div>
+      
+            </div>
+            <div id="right" style="display: flex; flex-direction: row; align-items: center; justify-content: center;border-radius:5px;">
+                <div>[NDSL]</div>
+            </div>
+
+        </div>
+
+        <div id="b1">
+            <img src="static/head2.png" style="height:60px;border-radius:50%" />
+            <span>
+                Randilyn Gomme 
+          <br />
+                MIS Student
+            </span>
+
+            <div>
+                <img href="https://www.linkedin.com/" target="_blank" src="static/linkedin.png" style="height:30px;" />
+                <a href="https://www.linkedin.com/"> src="static/linkedin.png" style="height:30px;" </a>
+
+            </div>
+
+        </div>
+
+        <div id="b2">
+            
+            <div id="left">
+
+                <div id="up" style="width:510px;height:110px;">
+                    <span class="title">ABOUT ME:</span>
+                    <p>I am a MIS student. I like programming and I am good at C#. I leaned Entity Framework for Database Manipulations. I know HTML, CSS and I started to learn JavaScript. It is fun. Later I will learn C# .NET MVC Dynamic Web App development and Web API development.</p>
+                </div>
+
+
+               
+                <div id="down" style="width:510px;height:160px;display:flex;flex-direction:row;align-items:center;">
+                    <span class="title" style="display:flex;flex-direction:row;align-items:start;">ACHIEVEMENTS:</span>
+                    <div>
+                        <img src="static/html.svg" style="height:100px;" />
+                    </div>
+
+                    <div>
+                        <img src="static/css.svg" style="height:100px;" />
+                    </div>
+
+                    <div>
+                        <img src="static/javascript.svg" style="height:100px;" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="right" style="width:280px;">
+                <span class="title">Recent News:</span>
+                <ul>
+                    <li>Learned C#</li>
+                    <li>Learned Entity Framework</li>
+                    <li> Learned <img src="static/sqlite.svg" style="height:40px;" /></li>
+                </ul>
+               
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div id="footer" >
+            <div>Delveloped by Randilyn Gomme for MIS 3033 Exam 2</div>
+            <div>
+                <img src="static/logo.svg" style="height:50px;display:flex;flex-direction:row;align-items:end;"  />
+            </div>
+        </div>
+
+
+
+    </div>
+
+   
 
 </body>
 
